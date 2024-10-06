@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Seguridad de la Información</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+
+    
+    <header>
+        <div class="navbar">
+            <div class="logo">ALUMNO:ANGIE CINSEROS GARCIA</div>
+            <nav>
+                <a href="#" onclick="loadSection('seccion1')">SECCIÓN 1</a> 
+                <a href="#" onclick="loadSection('seccion2')">SECCIÓN 2</a>
+                <a href="#" onclick="loadSection('seccion3')">SECCIÓN 3</a>
+                <a href="#" onclick="loadSection('inicio')" class="inicio">INICIO</a>
+            </nav>
+            <div class="profile-pic">
+                <img src="icono.png" alt="Foto de perfil">
+            </div>
+        </div>
+    </header>
+
+    
+    <main>
+        
+        <section class="hero" id="main-content">
+            <img src="seguridaddelainfromacion.jpg" alt="Imagen de seguridad">
+            <div class="hero-content">
+                <h1>SEGURIDAD DE LA INFORMACIÓN</h1>
+                <p>
+                    La seguridad de la información es el conjunto de prácticas y medidas diseñadas para proteger los datos y sistemas informáticos frente a amenazas y accesos no autorizados, garantizando la confidencialidad, integridad y disponibilidad de la información. Es crucial en cualquier organización para prevenir el robo de datos, el fraude, el espionaje corporativo, los ciberataques y otras amenazas digitales.
+                </p>
+            </div>
+        </section>
+
+        
+        <section id="dynamic-section" class="dynamic-content"></section>
+
+        <section class="sections">
+            <a href="#" onclick="loadSection('seccion1')" class="section-card">
+                <img src="ataques1.png" alt="Sección 1">
+                <h3>SECCIÓN 1</h3>
+            </a>
+            <a href="#" onclick="loadSection('seccion2')" class="section-card">
+                <img src="leyes.webp" alt="Sección 2">
+                <h3>SECCIÓN 2</h3>
+            </a>
+            <a href="#" onclick="loadSection('seccion3')" class="section-card">
+                <img src="seguridad-info.jpg" alt="Sección 3">
+                <h3>SECCIÓN 3</h3>
+            </a>
+        </section>
+    </main>
+
+    <script>
+        
+        function loadSection(section) {
+            const dynamicSection = document.getElementById('dynamic-section');
+            const mainContent = document.getElementById('main-content');
+
+           
+            mainContent.style.display = 'none';
+
+           
+        
+            if (section === 'seccion1') {
+                dynamicSection.innerHTML = `
+                    <div class="section-content">
+                        <h1>Ataques Ciberneticos </h1>
+                        
+        <ol>
+            <li>
+                <h2>DDoS (Distributed Denial of Service)</h2>
+                <p>Un ataque de denegación de servicio distribuido ocurre cuando varios dispositivos envían un gran volumen de tráfico a un servidor o red, con el objetivo de sobrecargarlo y hacerlo inaccesible para los usuarios legítimos.</p>
+            </li>
+
+            <li>
+                <h2>Ordenador Zombie</h2>
+                <p>Un ordenador zombie es un dispositivo que ha sido comprometido por un atacante y se utiliza sin el conocimiento del propietario para realizar actividades maliciosas, como enviar spam o participar en ataques DDoS.</p>
+            </li>
+
+            <li>
+                <h2>Ciberdelincuente</h2>
+                <p>Un ciberdelincuente es una persona que realiza actividades delictivas a través de medios digitales, como hackear sistemas, robar datos o difundir malware con fines de lucro o sabotaje.</p>
+            </li>
+
+            <li>
+                <h2>Botmaster</h2>
+                <p>El botmaster es el individuo que controla una botnet, una red de dispositivos infectados con malware que son controlados remotamente.</p>
+            </li>
+
+            <li>
+                <h2>Botnet</h2>
+                <p>Una botnet es una red de dispositivos infectados con malware (bots o ordenadores zombie) que son controlados de forma remota por un botmaster para llevar a cabo ataques como DDoS o el envío de spam.</p>
+            </li>
+
+            <li>
+                <h2>Ransomware</h2>
+                <p>El ransomware es un malware que cifra los archivos de una víctima y exige un pago para restaurar el acceso. Ejemplos incluyen WannaCry y Petya.</p>
+            </li>
+
+            <li>
+                <h2>Disclaimer</h2>
+                <p>Un disclaimer es una declaración que renuncia a la responsabilidad legal. En ciberseguridad, suele advertir sobre el uso de software o servicios en línea.</p>
+            </li>
+
+            <li>
+                <h2>The Morris Worm</h2>
+                <p>El gusano Morris fue uno de los primeros gusanos informáticos distribuidos a través de Internet en 1988, infectando miles de ordenadores y ralentizando el tráfico de la red.</p>
+            </li>
+
+            <li>
+                <h2>Ciberwarfare</h2>
+                <p>La ciberwarfare o guerra cibernética se refiere al uso de ataques cibernéticos por parte de estados para dañar o infiltrarse en sistemas informáticos y redes de otro país.</p>
+            </li>
+
+            <li>
+                <h2>Stuxnet</h2>
+                <p>Stuxnet fue un virus extremadamente sofisticado descubierto en 2010, diseñado para sabotear el programa nuclear iraní, afectando sistemas industriales específicos.</p>
+            </li>
+
+            <li>
+                <h2>Moonlight Maze</h2>
+                <p>Moonlight Maze es el nombre de una serie de ciberataques que comenzaron en 1996 y que tenían como objetivo robar información sensible de agencias gubernamentales y militares de EE. UU.</p>
+            </li>
+
+            <li>
+                <h2>Operación Aurora</h2>
+                <p>Operación Aurora fue una campaña de ciberataques en 2009 dirigida a grandes empresas tecnológicas como Google y Adobe, con el objetivo de robar propiedad intelectual.</p>
+            </li>
+
+            <li>
+                <h2>Freeze it into Submission</h2>
+                <p>Se refiere a una táctica de ciberataques para bloquear un sistema hasta que se vuelva inoperante, como ocurre en ataques DDoS o ransomware.</p>
+            </li>
+
+            <li>
+                <h2>WannaCry</h2>
+                <p>WannaCry fue un ataque de ransomware en mayo de 2017 que cifró los archivos de cientos de miles de ordenadores en todo el mundo, exigiendo un rescate en bitcoins.</p>
+            </li>
+
+            <li>
+                <h2>Petya</h2>
+                <p>Petya es un ransomware que apareció en 2016 y sobrescribía el registro de arranque maestro (MBR), impidiendo que el sistema operativo arrancara.</p>
+            </li>
+
+            <li>
+                <h2>Equifax (Ataque)</h2>
+                <p>El ataque a Equifax en 2017 comprometió los datos personales de aproximadamente 147 millones de personas, incluyendo números de seguridad social y otra información sensible.</p>
+            </li>
+
+            <li>
+                <h2>CAM4 (Ataque)</h2>
+                <p>En 2020, CAM4 sufrió una violación de seguridad que expuso más de 10 mil millones de registros, incluidos datos financieros y direcciones IP.</p>
+            </li>
+        </ol>
+                    </div>
+                `;
+            } else if (section === 'seccion2') {
+                dynamicSection.innerHTML = `
+                    <div class="section-content">
+                        
+                        <h1>Leyes Mexicanas</h1>
+    <ol>
+        <li><strong>Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados:</strong> Esta ley regula el tratamiento de datos personales por parte de las entidades gubernamentales en México. Establece principios y procedimientos que deben seguirse para garantizar la protección de la privacidad y los derechos de los titulares de los datos.</li>
+        
+        <li><strong>Ley de Propiedad Industrial:</strong> Esta ley protege los derechos de propiedad industrial, como patentes, marcas, nombres comerciales y diseños industriales. Tiene como objetivo fomentar la innovación, proteger las invenciones y evitar la competencia desleal.</li>
+        
+        <li><strong>Ley Federal de Derechos de Autor:</strong> Protege los derechos de los creadores de obras literarias, artísticas y científicas, incluyendo software, música, películas, y otras expresiones culturales. Establece sanciones contra la reproducción no autorizada de obras protegidas.</li>
+        
+        <li><strong>Ley Federal de Datos Personales en Posesión de los Particulares:</strong> Regula el tratamiento de los datos personales por parte de empresas y personas físicas. Tiene el objetivo de garantizar la privacidad y el derecho de las personas a la protección de sus datos frente a su uso indebido.</li>
+        
+        <li><strong>Código Penal Federal:</strong> El Código Penal Federal es el conjunto de leyes que establecen los delitos y sus penas en México, incluyendo delitos relacionados con el cibercrimen, fraude informático, y otros crímenes relacionados con la tecnología.</li>
+        
+        <li><strong>Ley General de Transparencia y Acceso a la Información Pública:</strong> Esta ley establece el derecho de los ciudadanos a acceder a la información pública en posesión de las entidades gubernamentales, fomentando la rendición de cuentas y la transparencia.</li>
+    </ol>
+
+    <h2>Criptografía</h2>
+    <ol>
+        <li><strong>Criptografía Simétrica:</strong> Es un método de cifrado donde el mismo secreto (clave) se usa tanto para cifrar como para descifrar la información. Es eficiente en términos de velocidad, pero puede ser insegura si la clave se comparte de manera inadecuada.</li>
+        
+        <li><strong>Criptografía Asimétrica:</strong> Este tipo de criptografía utiliza un par de claves: una clave pública para cifrar y una clave privada para descifrar. Es más segura para el intercambio de datos, ya que solo la persona con la clave privada puede descifrar la información.</li>
+        
+        <li><strong>Cifrado por Bloques:</strong> El cifrado por bloques divide el texto en bloques de tamaño fijo y cifra cada bloque de forma independiente. Ejemplos incluyen AES y DES.</li>
+        
+        <li><strong>Cifrado por Flujo:</strong> El cifrado por flujo cifra el texto en bits o bytes individuales en un flujo continuo. Es más adecuado para datos en tiempo real como voz o video.</li>
+        
+        <li><strong>Criptoanálisis:</strong> Es el estudio de técnicas para romper sistemas criptográficos y descifrar información sin conocimiento previo de la clave utilizada. Es una disciplina crucial en la seguridad informática.</li>
+    </ol>
+                    </div>
+                `;
+            } else if (section === 'seccion3') {
+                dynamicSection.innerHTML = `
+                    <div class="section-content">
+                        
+                       <h1>Principios de Seguridad de la Información</h1>
+    <ol>
+        <li><strong>Accesibilidad:</strong> La accesibilidad garantiza que los usuarios autorizados puedan acceder a la información cuando la necesiten. Un sistema seguro debe ser accesible, sin que esto comprometa la seguridad o la protección de los datos.</li>
+
+        <li><strong>Confidencialidad:</strong> Se refiere a la protección de los datos contra accesos no autorizados. La confidencialidad asegura que solo las personas autorizadas puedan ver la información sensible, evitando filtraciones y robos de datos.</li>
+
+        <li><strong>Disponibilidad:</strong> Asegura que los sistemas y la información estén disponibles y funcionando correctamente cuando sean requeridos por los usuarios. Es crucial para evitar interrupciones en los servicios o sistemas críticos.</li>
+
+        <li><strong>Autenticación:</strong> La autenticación verifica la identidad de los usuarios o sistemas antes de permitir el acceso. Es un principio fundamental para asegurar que solo las personas correctas tengan acceso a los recursos protegidos.</li>
+
+        <li><strong>Integridad:</strong> Se refiere a la precisión y consistencia de los datos a lo largo de su ciclo de vida. La integridad asegura que los datos no sean alterados o modificados sin autorización, manteniendo su exactitud y confiabilidad.</li>
+
+        <li><strong>Control de Acceso:</strong> El control de acceso establece quién puede acceder a qué recursos y bajo qué condiciones. Es fundamental para restringir el acceso no autorizado y garantizar que solo los usuarios con permisos adecuados interactúen con la información o los sistemas.</li>
+    </ol>
+                    </div>
+                `;
+            } else {
+               
+                dynamicSection.innerHTML = '';
+                mainContent.style.display = 'block'; 
+            }
+        }
+    </script>
+
+</body>
+</html>
